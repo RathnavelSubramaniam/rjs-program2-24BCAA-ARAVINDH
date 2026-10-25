@@ -1,10 +1,8 @@
-// Write a function that returns a message using template literals.
+const getMessage = require("./greet");
 
-function getMessage(name, age) {
-    // Write your code here
+if (getMessage("Alice", 20) === "Hello Alice, you are 20 years old.") {
+    console.log("Test Passed");
+} else {
+    console.log("Test Failed");
+    process.exit(1);
 }
-
-// Don't change the code below
-console.log(getMessage(process.argv[2], process.argv[3]));
-
-module.exports = getMessage;
